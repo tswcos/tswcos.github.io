@@ -4,5 +4,6 @@
 
 [meta-eid](https://tswcos.github.io/meta-eid/)
 
-[Debian cross build](https://tswcos.github.io/debian-cross-patches/)
+[Debian Cross](https://tswcos.github.io/debian-cross-patches/)
 
+[Debian Cross Build Status](https://tswcos.github.io/sbuild/)

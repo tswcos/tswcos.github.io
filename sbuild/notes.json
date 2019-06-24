@@ -1,0 +1,162 @@
+{
+  "9menu": {
+    "bugs": ["921048"],
+    "submitted": true,
+    "accepted": true
+  },
+  "aaphoto": {
+    "bugs": ["922937"],
+    "submitted": true
+  },
+  "acm": {
+    "remark": "Cannot build parallel. Compile requires to run dis/disgen which is a cross-built binary."
+  },
+  "agg": {
+    "bugs": ["914740"]
+  },
+  "and": {
+    "bugs": ["915441"]
+  },
+  "angband": {
+    "bugs": ["894114"]
+  },
+  "between": {
+    "bugs": ["911249"]
+  },
+  "busybox": {
+    "bugs": ["794526"],
+    "submitted": true
+  },
+  "coreutils": {
+    "bugs": ["721358"],
+    "submitted": true
+  },
+  "delly": {
+    "bugs": ["924529"],
+    "submitted": true,
+    "accepted": true
+  },
+  "dsh": {
+    "bugs": ["869478"]
+  },
+  "e2fsprogs": {
+    "remark": "Success if disable parallel build"
+  },
+  "epcr": {
+    "bugs": ["922192"],
+    "submitted": true,
+    "accepted": true
+  },
+  "flex": {
+    "bugs": ["833146"]
+  },
+  "gdbm": {
+    "remark": "Success if disable parallel build"
+  },
+  "ht": {
+    "bugs": ["914630"]
+  },
+  "leaktracer": {
+    "bugs": ["865741"]
+  },
+  "libdmx": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libfs": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libqb": {
+    "remark": "<a href=\"https://github.com/ClusterLabs/libqb/pull/247\">Upstream issue</a>"
+  },
+  "libsamplerate": {
+    "bugs": ["836014"]
+  },
+  "libx11": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxext": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxi": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxinerama": {
+    "bugs": ["861073"],
+    "remark": "Temporary defer cache variable patches",
+    "submitted": true
+  },
+  "libxrandr": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxrender": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxres": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxss": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxt": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxv": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxvmc": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "libxxf86vm": {
+    "remark": "Temporary defer cache variable patches"
+  },
+  "mbw": {
+    "bugs": ["916488"]
+  },
+  "nas": {
+    "bugs": ["922367"],
+    "submitted": true,
+    "accepted": true
+  },
+  "nasm": {
+    "bugs": ["850933"]
+  },
+  "openssn": {
+    "bugs": ["914724"]
+  },
+  "pal": {
+    "bugs": ["923426"]
+  },
+  "pcal": {
+    "bugs": ["900740"],
+    "submitted": true
+  },
+  "pciutils": {
+    "remark": "Fail if build parallel"
+  },
+  "socket": {
+    "bugs": ["922373"],
+    "submitted": true
+  },
+  "unadf": {
+    "bugs": ["915167"]
+  },
+  "usb-modeswitch": {
+    "bugs": ["836018"]
+  },
+  "vlan": {
+    "bugs": ["794156"]
+  },
+  "vsftpd": {
+    "bugs": ["850471"]
+  },
+  "wayland": {
+    "bugs": ["836687"]
+  },
+  "xfsprogs": {
+    "bugs": ["794158"]
+  },
+  "zip": {
+    "bugs": ["836792"]
+  }
+}
+

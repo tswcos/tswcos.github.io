@@ -1,0 +1,7 @@
+.sortable table {
+    counter-reset: rowNumber;
+}.sortable tr {
+    counter-increment: rowNumber;
+}.sortable tr td:first-child::before {
+    content: counter(rowNumber);
+}

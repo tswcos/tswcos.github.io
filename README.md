@@ -6,4 +6,4 @@
 
 [Debian Cross](https://tswcos.github.io/debian-cross-patches/)
 
-[Debian Cross Build Status](https://tswcos.github.io/sbuild/)
+[Debian Cross Build Status](https://tswcos.github.io/sbuild/index.html)

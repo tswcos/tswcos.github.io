@@ -9,7 +9,7 @@
     "submitted": true
   },
   "acm": {
-    "remark": "Cannot build parallel. Compile requires to run dis/disgen which is a cross-built binary."
+    "remark": "Cannot build parallel. Compile requires to run disdisgen which is a cross-built binary."
   },
   "agg": {
     "bugs": ["914740"]
@@ -66,7 +66,7 @@
     "remark": "Temporary defer cache variable patches"
   },
   "libqb": {
-    "remark": "<a href=\"https://github.com/ClusterLabs/libqb/pull/247\">Upstream issue</a>"
+    "remark": "<a href=\"https:github.comClusterLabslibqbpull247\">Upstream issue<a>"
   },
   "libsamplerate": {
     "bugs": ["836014"]
@@ -157,6 +157,217 @@
   },
   "zip": {
     "bugs": ["836792"]
-  }
+  },
+  "atftp": {
+    "bugs": ["931149"],
+    "submitted": true
+  },
+  "boxshade": {
+    "bugs": ["931150"],
+    "submitted": true
+  },
+  "bwbasic": {
+    "bugs": ["931151"],
+    "submitted": true
+  },
+  "cpipe": {
+    "bugs": ["931152"],
+    "submitted": true
+  },
+  "dclock": {
+    "bugs": ["930818"],
+    "submitted": true
+  },
+  "di": {
+    "bugs": ["930819"],
+    "submitted": true
+  },
+  "discover": {
+    "bugs": ["931153"],
+    "submitted": true
+  },
+  "fastdnaml": {
+    "bugs": ["931154"],
+    "submitted": true
+  },
+  "four-in-a-row": {
+    "bugs": ["930822"],
+    "submitted": true
+  },
+  "ftnchek": {
+    "bugs": ["931155"],
+    "submitted": true
+  },
+  "glam2": {
+    "bugs": ["931156"],
+    "submitted": true
+  },
+  "gnome-calculator": {
+    "bugs": ["930823"],
+    "submitted": true
+  },
+  "gnome-chess": {
+    "bugs": ["930824"],
+    "submitted": true
+  },
+  "gnome-klotski": {
+    "bugs": ["930826"],
+    "submitted": true
+  },
+  "gnome-mahjongg": {
+    "bugs": ["930825"],
+    "submitted": true
+  },
+  "gnome-mines": {
+    "bugs": ["930828"],
+    "submitted": true
+  },
+  "gnome-sudoku": {
+    "bugs": ["930829"],
+    "submitted": true
+  },
+  "gnome-tetravex": {
+    "bugs": ["930830"],
+    "submitted": true
+  },
+  "gtkpool": {
+    "bugs": ["930831"],
+    "submitted": true
+  },
+  "iagno": {
+    "bugs": ["930832"],
+    "submitted": true
+  },
+  "libcrypt-openssl-dsa-perl": {
+    "bugs": ["930980"],
+    "submitted": true
+  },
+  "libcrypt-openssl-random-perl": {
+    "bugs": ["930981"],
+    "submitted": true
+  },
+  "libepoxy": {
+    "bugs": ["918840"],
+    "submitted": true
+  },
+  "libgnome-games-support": {
+    "bugs": ["930982"],
+    "submitted": true
+  },
+  "libgsecuredelete": {
+    "bugs": ["930989"],
+    "submitted": true
+  },
+  "libpam-encfs": {
+    "bugs": ["930983"],
+    "submitted": true
+  },
+  "libprintsys": {
+    "bugs": ["930984"],
+    "submitted": true
+  },
+  "libticables": {
+    "bugs": ["930985"],
+    "submitted": true
+  },
+  "libticalcs": {
+    "bugs": ["930986"],
+    "submitted": true
+  },
+  "libticonv": {
+    "bugs": ["930987"],
+    "submitted": true
+  },
+  "libtifiles": {
+    "bugs": ["930988"],
+    "submitted": true
+  },
+  "lightsoff": {
+    "bugs": ["930833"],
+    "submitted": true
+  },
+  "mgdiff": {
+    "bugs": ["931161"],
+    "submitted": true
+  },
+  "perl": {
+    "bugs": ["930834"],
+    "submitted": true
+  },
+  "quadrapassel": {
+    "bugs": ["930835"],
+    "submitted": true
+  },
+  "seahorse": {
+    "bugs": ["930837"],
+    "submitted": true
+  },
+  "shotwell": {
+    "bugs": ["930838"],
+    "submitted": true
+  },
+  "spell": {
+    "bugs": ["930840"],
+    "submitted": true
+  },
+  "startpar": {
+    "bugs": ["931165"],
+    "submitted": true
+  },
+  "swell-foop": {
+    "bugs": ["930841"],
+    "submitted": true
+  },
+  "tgif": {
+    "bugs": ["930842"],
+    "submitted": true
+  },
+  "tnftp": {
+    "bugs": ["931163"],
+    "submitted": true
+  },
+  "wmnet": {
+    "bugs": ["927773"],
+    "submitted": true
+  },
+  "xautolock": {
+    "bugs": ["931164"],
+    "submitted": true
+  },
+  "xcb": {
+    "bugs": ["928317"],
+    "submitted": true
+  },
+  "xcolorsel": {
+    "bugs": ["930844"],
+    "submitted": true
+  },
+  "xkeycaps": {
+    "bugs": ["930845"],
+    "submitted": true
+  },
+  "xless": {
+    "bugs": ["930847"],
+    "submitted": true
+  },
+  "xmille": {
+    "bugs": ["930848"],
+    "submitted": true
+  },
+  "xskat": {
+    "bugs": ["930849"],
+    "submitted": true
+  },
+  "xsysinfo": {
+    "bugs": ["930851"],
+    "submitted": true
+  },
+  "xvkbd": {
+    "bugs": ["930852"],
+    "submitted": true
+  },
+  "xzoom": {
+    "bugs": ["930853"],
+    "submitted": true
+  },
 }
-

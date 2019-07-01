@@ -28,6 +28,7 @@
     "bugs": ["911249"]
   },
   "boxshade": {
+    "accepted": true,
     "bugs": ["931150"],
     "submitted": true
   },
@@ -48,6 +49,7 @@
     "submitted": true
   },
   "dclock": {
+    "accepted": true,
     "bugs": ["930818"],
     "submitted": true
   },
@@ -94,6 +96,7 @@
     "remark": "Success if disable parallel build"
   },
   "glam2": {
+    "accepted": true,
     "bugs": ["931156"],
     "submitted": true
   },
@@ -150,10 +153,6 @@
   "libdmx": {
     "remark": "Temporary defer cache variable patches"
   },
-  "libepoxy": {
-    "bugs": ["918840"],
-    "submitted": true
-  },
   "libfs": {
     "remark": "Temporary defer cache variable patches"
   },
@@ -166,6 +165,7 @@
     "submitted": true
   },
   "libpam-encfs": {
+    "accepted": true,
     "bugs": ["930983"],
     "submitted": true
   },
@@ -340,6 +340,7 @@
     "bugs": ["794158"]
   },
   "xkeycaps": {
+    "accepted": true,
     "bugs": ["930845"],
     "submitted": true
   },
@@ -360,6 +361,7 @@
     "submitted": true
   },
   "xvkbd": {
+    "accepted": true,
     "bugs": ["930852"],
     "submitted": true
   },

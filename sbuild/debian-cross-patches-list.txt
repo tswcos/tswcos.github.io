@@ -37,7 +37,6 @@ leaktracer
 libcrypt-openssl-dsa-perl
 libcrypt-openssl-random-perl
 libdmx
-libepoxy
 libfs
 libgnome-games-support
 libgsecuredelete

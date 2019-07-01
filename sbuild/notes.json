@@ -1,8 +1,8 @@
 {
   "9menu": {
+    "accepted": true,
     "bugs": ["921048"],
-    "submitted": true,
-    "accepted": true
+    "submitted": true
   },
   "aaphoto": {
     "bugs": ["922937"],
@@ -20,21 +20,49 @@
   "angband": {
     "bugs": ["894114"]
   },
+  "atftp": {
+    "bugs": ["931149"],
+    "submitted": true
+  },
   "between": {
     "bugs": ["911249"]
   },
+  "boxshade": {
+    "bugs": ["931150"],
+    "submitted": true
+  },
   "busybox": {
     "bugs": ["794526"],
+    "submitted": true
+  },
+  "bwbasic": {
+    "bugs": ["931151"],
     "submitted": true
   },
   "coreutils": {
     "bugs": ["721358"],
     "submitted": true
   },
+  "cpipe": {
+    "bugs": ["931152"],
+    "submitted": true
+  },
+  "dclock": {
+    "bugs": ["930818"],
+    "submitted": true
+  },
   "delly": {
+    "accepted": true,
     "bugs": ["924529"],
-    "submitted": true,
-    "accepted": true
+    "submitted": true
+  },
+  "di": {
+    "bugs": ["930819"],
+    "submitted": true
+  },
+  "discover": {
+    "bugs": ["931153"],
+    "submitted": true
   },
   "dsh": {
     "bugs": ["869478"]
@@ -43,33 +71,129 @@
     "remark": "Success if disable parallel build"
   },
   "epcr": {
+    "accepted": true,
     "bugs": ["922192"],
-    "submitted": true,
-    "accepted": true
+    "submitted": true
+  },
+  "fastdnaml": {
+    "bugs": ["931154"],
+    "submitted": true
   },
   "flex": {
     "bugs": ["833146"]
   },
+  "four-in-a-row": {
+    "bugs": ["930822"],
+    "submitted": true
+  },
+  "ftnchek": {
+    "bugs": ["931155"],
+    "submitted": true
+  },
   "gdbm": {
     "remark": "Success if disable parallel build"
+  },
+  "glam2": {
+    "bugs": ["931156"],
+    "submitted": true
+  },
+  "gnome-calculator": {
+    "bugs": ["930823"],
+    "submitted": true
+  },
+  "gnome-chess": {
+    "bugs": ["930824"],
+    "submitted": true
+  },
+  "gnome-klotski": {
+    "bugs": ["930826"],
+    "submitted": true
+  },
+  "gnome-mahjongg": {
+    "bugs": ["930825"],
+    "submitted": true
+  },
+  "gnome-mines": {
+    "bugs": ["930828"],
+    "submitted": true
+  },
+  "gnome-sudoku": {
+    "bugs": ["930829"],
+    "submitted": true
+  },
+  "gnome-tetravex": {
+    "bugs": ["930830"],
+    "submitted": true
+  },
+  "gtkpool": {
+    "bugs": ["930831"],
+    "submitted": true
   },
   "ht": {
     "bugs": ["914630"]
   },
+  "iagno": {
+    "bugs": ["930832"],
+    "submitted": true
+  },
   "leaktracer": {
     "bugs": ["865741"]
+  },
+  "libcrypt-openssl-dsa-perl": {
+    "bugs": ["930980"],
+    "submitted": true
+  },
+  "libcrypt-openssl-random-perl": {
+    "bugs": ["930981"],
+    "submitted": true
   },
   "libdmx": {
     "remark": "Temporary defer cache variable patches"
   },
+  "libepoxy": {
+    "bugs": ["918840"],
+    "submitted": true
+  },
   "libfs": {
     "remark": "Temporary defer cache variable patches"
+  },
+  "libgnome-games-support": {
+    "bugs": ["930982"],
+    "submitted": true
+  },
+  "libgsecuredelete": {
+    "bugs": ["930989"],
+    "submitted": true
+  },
+  "libpam-encfs": {
+    "bugs": ["930983"],
+    "submitted": true
+  },
+  "libprintsys": {
+    "bugs": ["930984"],
+    "submitted": true
   },
   "libqb": {
     "remark": "<a href=\"https:github.comClusterLabslibqbpull247\">Upstream issue<a>"
   },
   "libsamplerate": {
     "bugs": ["836014"]
+  },
+  "libticables": {
+    "bugs": ["930985"],
+    "submitted": true
+  },
+  "libticalcs": {
+    "bugs": ["930986"],
+    "submitted": true
+  },
+  "libticonv": {
+    "bugs": ["930987"],
+    "submitted": true
+  },
+  "libtifiles": {
+    "bugs": ["930988"],
+    "submitted": true
   },
   "libx11": {
     "remark": "Temporary defer cache variable patches"
@@ -109,13 +233,21 @@
   "libxxf86vm": {
     "remark": "Temporary defer cache variable patches"
   },
+  "lightsoff": {
+    "bugs": ["930833"],
+    "submitted": true
+  },
   "mbw": {
     "bugs": ["916488"]
   },
+  "mgdiff": {
+    "bugs": ["931161"],
+    "submitted": true
+  },
   "nas": {
+    "accepted": true,
     "bugs": ["922367"],
-    "submitted": true,
-    "accepted": true
+    "submitted": true
   },
   "nasm": {
     "bugs": ["850933"]
@@ -133,163 +265,6 @@
   "pciutils": {
     "remark": "Fail if build parallel"
   },
-  "socket": {
-    "bugs": ["922373"],
-    "submitted": true
-  },
-  "unadf": {
-    "bugs": ["915167"]
-  },
-  "usb-modeswitch": {
-    "bugs": ["836018"]
-  },
-  "vlan": {
-    "bugs": ["794156"]
-  },
-  "vsftpd": {
-    "bugs": ["850471"]
-  },
-  "wayland": {
-    "bugs": ["836687"]
-  },
-  "xfsprogs": {
-    "bugs": ["794158"]
-  },
-  "zip": {
-    "bugs": ["836792"]
-  },
-  "atftp": {
-    "bugs": ["931149"],
-    "submitted": true
-  },
-  "boxshade": {
-    "bugs": ["931150"],
-    "submitted": true
-  },
-  "bwbasic": {
-    "bugs": ["931151"],
-    "submitted": true
-  },
-  "cpipe": {
-    "bugs": ["931152"],
-    "submitted": true
-  },
-  "dclock": {
-    "bugs": ["930818"],
-    "submitted": true
-  },
-  "di": {
-    "bugs": ["930819"],
-    "submitted": true
-  },
-  "discover": {
-    "bugs": ["931153"],
-    "submitted": true
-  },
-  "fastdnaml": {
-    "bugs": ["931154"],
-    "submitted": true
-  },
-  "four-in-a-row": {
-    "bugs": ["930822"],
-    "submitted": true
-  },
-  "ftnchek": {
-    "bugs": ["931155"],
-    "submitted": true
-  },
-  "glam2": {
-    "bugs": ["931156"],
-    "submitted": true
-  },
-  "gnome-calculator": {
-    "bugs": ["930823"],
-    "submitted": true
-  },
-  "gnome-chess": {
-    "bugs": ["930824"],
-    "submitted": true
-  },
-  "gnome-klotski": {
-    "bugs": ["930826"],
-    "submitted": true
-  },
-  "gnome-mahjongg": {
-    "bugs": ["930825"],
-    "submitted": true
-  },
-  "gnome-mines": {
-    "bugs": ["930828"],
-    "submitted": true
-  },
-  "gnome-sudoku": {
-    "bugs": ["930829"],
-    "submitted": true
-  },
-  "gnome-tetravex": {
-    "bugs": ["930830"],
-    "submitted": true
-  },
-  "gtkpool": {
-    "bugs": ["930831"],
-    "submitted": true
-  },
-  "iagno": {
-    "bugs": ["930832"],
-    "submitted": true
-  },
-  "libcrypt-openssl-dsa-perl": {
-    "bugs": ["930980"],
-    "submitted": true
-  },
-  "libcrypt-openssl-random-perl": {
-    "bugs": ["930981"],
-    "submitted": true
-  },
-  "libepoxy": {
-    "bugs": ["918840"],
-    "submitted": true
-  },
-  "libgnome-games-support": {
-    "bugs": ["930982"],
-    "submitted": true
-  },
-  "libgsecuredelete": {
-    "bugs": ["930989"],
-    "submitted": true
-  },
-  "libpam-encfs": {
-    "bugs": ["930983"],
-    "submitted": true
-  },
-  "libprintsys": {
-    "bugs": ["930984"],
-    "submitted": true
-  },
-  "libticables": {
-    "bugs": ["930985"],
-    "submitted": true
-  },
-  "libticalcs": {
-    "bugs": ["930986"],
-    "submitted": true
-  },
-  "libticonv": {
-    "bugs": ["930987"],
-    "submitted": true
-  },
-  "libtifiles": {
-    "bugs": ["930988"],
-    "submitted": true
-  },
-  "lightsoff": {
-    "bugs": ["930833"],
-    "submitted": true
-  },
-  "mgdiff": {
-    "bugs": ["931161"],
-    "submitted": true
-  },
   "perl": {
     "bugs": ["930834"],
     "submitted": true
@@ -304,6 +279,10 @@
   },
   "shotwell": {
     "bugs": ["930838"],
+    "submitted": true
+  },
+  "socket": {
+    "bugs": ["922373"],
     "submitted": true
   },
   "spell": {
@@ -326,6 +305,21 @@
     "bugs": ["931163"],
     "submitted": true
   },
+  "unadf": {
+    "bugs": ["915167"]
+  },
+  "usb-modeswitch": {
+    "bugs": ["836018"]
+  },
+  "vlan": {
+    "bugs": ["794156"]
+  },
+  "vsftpd": {
+    "bugs": ["850471"]
+  },
+  "wayland": {
+    "bugs": ["836687"]
+  },
   "wmnet": {
     "bugs": ["927773"],
     "submitted": true
@@ -341,6 +335,9 @@
   "xcolorsel": {
     "bugs": ["930844"],
     "submitted": true
+  },
+  "xfsprogs": {
+    "bugs": ["794158"]
   },
   "xkeycaps": {
     "bugs": ["930845"],
@@ -370,4 +367,7 @@
     "bugs": ["930853"],
     "submitted": true
   },
+  "zip": {
+    "bugs": ["836792"]
+  }
 }

@@ -73,6 +73,7 @@ quadrapassel
 rc
 remind
 rtkit
+rt-tests
 seahorse
 shotwell
 socket

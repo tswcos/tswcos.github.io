@@ -29,12 +29,13 @@ import (
 )
 
 const (
-	sbuildLog            = "https://raw.githubusercontent.com/tswcos/build-log/master/"
+	sbuild_log           = "https://raw.githubusercontent.com/tswcos/build-log/master/"
 	debian_cross_patches = "https://github.com/meta-debian/debian-cross-patches/tree/master/"
 	white                = "#ecf0f1"
 	green                = "#2ecc71"
 	orange               = "#e67e22"
 	blue                 = "#86c1b9"
+	red                  = "#df2029"
 )
 
 func genDCB(notes map[string]interface{}) {
@@ -99,6 +100,9 @@ func genDCB(notes map[string]interface{}) {
 					if data["accepted"].(bool) {
 						accepted = "Yes"
 						bgcolor = green
+					}else {
+						accepted = "No"
+						bgcolor = red
 					}
 				}
 			}
@@ -158,7 +162,7 @@ func genIndex(notes map[string]interface{}) {
 		timestmp := t.Format("Jan _2, 2006")
 		customTimestmp := t.Format("20060102150405")
 
-		bgcolor := "#df2029"
+		bgcolor := red
 		if status == "attempted" {
 			bgcolor = "#e74c3c"
 		} else if status == "skipped" {
@@ -197,7 +201,7 @@ func genIndex(notes map[string]interface{}) {
 
 		logFile := name + "_" + version + "_armhf.build"
 		row := "<tr bgcolor=\"" + bgcolor + "\"><td></td>\n" +
-			"<td><a href=\"" + sbuildLog + logFile + "\">" + name + "</a></td>\n" +
+			"<td><a href=\"" + sbuild_log + logFile + "\">" + name + "</a></td>\n" +
 			"<td>" + version + "</td>\n" +
 			"<td>" + status + "</td>\n" +
 			"<td sorttable_customkey=\"" + customTimestmp + "\">" + timestmp + "</td>\n" +

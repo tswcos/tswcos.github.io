@@ -1,3 +1,3 @@
 #!/bin/sh
 git submodule update --remote
-go run sbuild-gen.go
+go run index-gen.go

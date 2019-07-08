@@ -80,7 +80,7 @@
   "fastdnaml": {
     "bugs": ["931154"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "flex": {
     "bugs": ["833146"]
@@ -88,7 +88,7 @@
   "four-in-a-row": {
     "bugs": ["930822"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "ftnchek": {
     "bugs": ["931155"],
@@ -105,37 +105,37 @@
   "gnome-calculator": {
     "bugs": ["930823"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-chess": {
     "bugs": ["930824"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-klotski": {
     "bugs": ["930826"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-mahjongg": {
     "bugs": ["930825"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-mines": {
     "bugs": ["930828"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-sudoku": {
     "bugs": ["930829"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gnome-tetravex": {
     "bugs": ["930830"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "gtkpool": {
     "bugs": ["930831"],
@@ -147,7 +147,7 @@
   "iagno": {
     "bugs": ["930832"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "leaktracer": {
     "bugs": ["865741"]
@@ -155,12 +155,12 @@
   "libcrypt-openssl-dsa-perl": {
     "bugs": ["930980"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libcrypt-openssl-random-perl": {
     "bugs": ["930981"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libdmx": {
     "remark": "Temporary defer cache variable patches"
@@ -171,12 +171,12 @@
   "libgnome-games-support": {
     "bugs": ["930982"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libgsecuredelete": {
     "bugs": ["930989"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libpam-encfs": {
     "accepted": true,
@@ -196,17 +196,17 @@
   "libticables": {
     "bugs": ["930985"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libticalcs": {
     "bugs": ["930986"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libticonv": {
     "bugs": ["930987"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "libtifiles": {
     "bugs": ["930988"],
@@ -253,7 +253,7 @@
   "lightsoff": {
     "bugs": ["930833"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "mbw": {
     "bugs": ["916488"]
@@ -261,7 +261,7 @@
   "mgdiff": {
     "bugs": ["931161"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "nas": {
     "accepted": true,
@@ -291,7 +291,7 @@
   "quadrapassel": {
     "bugs": ["930835"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "rt-tests": {
     "bugs": ["930836"],
@@ -300,12 +300,12 @@
   "seahorse": {
     "bugs": ["930837"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "shotwell": {
     "bugs": ["930838"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "socket": {
     "bugs": ["922373"],
@@ -318,12 +318,12 @@
   "startpar": {
     "bugs": ["931165"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "swell-foop": {
     "bugs": ["930841"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "tgif": {
     "bugs": ["930842"],
@@ -355,7 +355,7 @@
   "xautolock": {
     "bugs": ["931164"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xcb": {
     "bugs": ["928317"],
@@ -364,7 +364,7 @@
   "xcolorsel": {
     "bugs": ["930844"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xfsprogs": {
     "bugs": ["794158"]
@@ -372,7 +372,7 @@
   "xkeycaps": {
     "bugs": ["930845"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xless": {
     "bugs": ["930847"],
@@ -381,7 +381,7 @@
   "xmille": {
     "bugs": ["930848"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xskat": {
     "bugs": ["930849"],
@@ -390,17 +390,17 @@
   "xsysinfo": {
     "bugs": ["930851"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xvkbd": {
     "bugs": ["930852"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "xzoom": {
     "bugs": ["930853"],
     "submitted": true,
-    "Ejected": true
+    "accepted": false
   },
   "zip": {
     "bugs": ["836792"]

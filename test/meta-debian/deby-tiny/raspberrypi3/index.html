@@ -1,0 +1,30 @@
+<html>
+<head><title>meta-debian Status</title>
+<style>
+.main_table table {
+    counter-reset: rowNumber;
+}.main_table tr {
+    counter-increment: rowNumber;
+}.main_table tr td:first-child::before {
+    content: counter(rowNumber);
+}
+</style>
+</head>
+
+<body>
+<h1>meta-debian Status</h1>
+<br>
+<table>
+<tr><td><b>Built distro</b></td><td>deby-tiny</td></tr>
+<tr><td><b>Built machine</b></td><td>raspberrypi3</td></tr>
+</table>
+<br>
+<br><table class="main_table">
+<thead>
+<tr bgcolor="#bdc3c7">
+<th></th>
+<th>Package</th>
+<th>Version</th>
+<th>Build Status</th>
+<th>Ptest Status</th>
+</tr></thead>

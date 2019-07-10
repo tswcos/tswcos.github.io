@@ -1,0 +1,98 @@
+<html>
+<head><title>meta-debian Status</title>
+<style>
+.main_table table {
+    counter-reset: rowNumber;
+}.main_table tr {
+    counter-increment: rowNumber;
+}.main_table tr td:first-child::before {
+    content: counter(rowNumber);
+}
+</style>
+</head>
+
+<body>
+<h1>meta-debian Status</h1>
+<br>
+<table>
+<tr><td><b>Built distro</b></td><td>deby-tiny</td></tr>
+<tr><td><b>Built machine</b></td><td>qemuarm</td></tr>
+</table>
+<br>
+<br><table class="main_table">
+<thead>
+<tr bgcolor="#bdc3c7">
+<th></th>
+<th>Package</th>
+<th>Version</th>
+<th>Build Status</th>
+<th>Ptest Status</th>
+</tr></thead>
+<tr><td></td><td>autoconf</td><td>2.69</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/autoconf.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>automake</td><td>1.16.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/automake.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>bc</td><td>1.07.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/bc.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>binutils</td><td>2.31.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/binutils.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>binutils-cross-canadian</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/binutils-cross-canadian.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>binutils-cross</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/binutils-cross.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>binutils-crosssdk</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/binutils-crosssdk.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>bison</td><td>3.3.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/bison.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>busybox</td><td>1.30.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/busybox.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>bzip2</td><td>1.0.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/bzip2.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>curl</td><td>7.64.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/curl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>db</td><td>5.3.28</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/db.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>dbus</td><td>1.12.16</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/dbus.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>ed</td><td>1.15</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/ed.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>expat</td><td>2.2.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/expat.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>flex</td><td>2.6.4</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/flex.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gawk</td><td>4.2.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gawk.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc</td><td>8.3.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-cross-canadian</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-cross-canadian.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-cross</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-cross.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-crosssdk</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-crosssdk.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-runtime</td><td>8.3.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-runtime.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-sanitizers</td><td>8.3.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-sanitizers.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gcc-source</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gcc-source.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gdb</td><td>8.2.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gdb.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gdb-cross-canadian</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gdb-cross-canadian.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gdb-cross</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gdb-cross.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gettext</td><td>0.19.8.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gettext.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>git</td><td>2.20.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/git.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>glib-2.0</td><td>2.58.3</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/glib-2.0.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>glibc</td><td>2.28</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/glibc.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>glibc-locale</td><td>2.28</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/glibc-locale.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gmp</td><td>6.1.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gmp.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gnulib-native</td><td>20140202+stable</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gnulib-native.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gzip</td><td>1.9</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/gzip.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>kbd</td><td>2.0.4</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/kbd.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libgcc</td><td>8.3.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libgcc.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libgcc-initial</td><td>8.3.0</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libgcc-initial.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libgfortran</td><td>NA</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libgfortran.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libmpc</td><td>1.1.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libmpc.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libtool</td><td>2.4.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libtool.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libtool-cross</td><td>2.4.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libtool-cross.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libxml2</td><td>2.9.4</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/libxml2.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>linux-base</td><td>gitAUTOINC+5b7dee96a2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/linux-base.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>linux-libc-headers-base</td><td>gitAUTOINC+5b7dee96a2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/linux-libc-headers-base.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>m4</td><td>1.4.18</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/m4.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>make</td><td>4.2.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/make.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>mpfr</td><td>4.0.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/mpfr.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>nativesdk-libtool</td><td>2.4.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/nativesdk-libtool.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>ncurses</td><td>6.1+20181013</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/ncurses.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>openssl</td><td>1.1.1c</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/openssl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pax-utils</td><td>1.2.4</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/pax-utils.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pciutils</td><td>3.5.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/pciutils.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>perl</td><td>5.28.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/perl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pkgconfig</td><td>0.29</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/pkgconfig.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>popt</td><td>1.16</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/popt.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>procps</td><td>3.3.15</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/procps.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>quilt</td><td>0.65</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/quilt.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>rdma-core</td><td>22.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/rdma-core.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>readline</td><td>7.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/readline.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>sysfsutils</td><td>2.1.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/sysfsutils.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>tar</td><td>1.30</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/tar.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>u-boot</td><td>2019.01</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/u-boot.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>u-boot-fw-utils</td><td>2019.01</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/u-boot-fw-utils.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>u-boot-tools</td><td>2019.01</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/u-boot-tools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>unifdef</td><td>2.10</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/unifdef.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>zlib</td><td>1.2.11</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby-tiny/qemuarm/zlib.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+</table></body></html>

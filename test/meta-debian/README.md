@@ -7,7 +7,7 @@
 - [qemuppc](./deby/qemuppc)
 - [qemux86](./deby/qemux86)
 - [qemux86-64](./deby/qemux86-64)
-- [raspberrypi](./deby/raspberrypi)
+- [raspberrypi3](./deby/raspberrypi3)
 
 ## deby-tiny
 - [beaglebone](./deby-tiny/beaglebone)
@@ -17,6 +17,5 @@
 - [qemuppc](./deby-tiny/qemuppc)
 - [qemux86](./deby-tiny/qemux86)
 - [qemux86-64](./deby-tiny/qemux86-64)
-- [raspberrypi](./deby-tiny/raspberrypi)
 - [raspberrypi3](./deby-tiny/raspberrypi3)
 

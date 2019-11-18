@@ -9,46 +9,152 @@
     content: counter(rowNumber);
 }
 </style>
+<script>
+function reload() {
+	var distro = document.getElementById("distro").value;
+	var machine = document.getElementById("machine").value;
+
+	current_url = window.location.href.replace("/index.html","");
+	new_url = current_url + "/../../" + distro + "/" + machine + "/index.html";
+	new_url = new_url.replace("//..","/..");
+	window.location = new_url;
+}
+
+function select_distro() {
+	var deby_tiny_machines = ['','beaglebone','qemuarm','qemuarm64','qemumips','qemuppc','qemux86','qemux86-64','raspberrypi3'];
+	var deby_machines = ['','beaglebone','qemuarm','qemuarm64','qemumips','qemuppc','qemux86','qemux86-64','raspberrypi3'];
+	var machines = [];
+
+	if (document.getElementById('distro').value == "deby") {
+		machines = deby_machines;
+	} else {
+		machines = deby_tiny_machines;
+	}
+
+	var new_opts = [];
+	for (m of machines) {
+		new_opts.push("<option value='" + m + "'>" + m + "</option>");
+	}
+	document.getElementById("machine").innerHTML=new_opts.join()
+}
+
+window.onload = function(){
+	var distro = "";
+	var machine = "";
+	var dirs = window.location.href.split("/");
+	if (dirs[dirs.length - 1] == "index.html") {
+		machine = dirs[dirs.length - 2]
+		distro = dirs[dirs.length - 3]
+	} else {
+		machine = dirs[dirs.length - 1]
+		distro = dirs[dirs.length - 2]
+	}
+
+	document.getElementById('distro').value = distro;
+
+	select_distro();
+
+	document.getElementById('machine').value = machine;
+};
+</script>
 </head>
 
 <body>
 <h1>meta-debian Status</h1>
 <br>
+<h3>deby - qemuarm64</h3>
 <table>
-<tr><td><b>Built distro</b></td><td>deby</td></tr>
-<tr><td><b>Built machine</b></td><td>qemuarm64</td></tr>
+<tr>
+	<td><b>Built distro</b></td>
+	<td><select id="distro" name="distro" onchange="select_distro()">
+		<option value='deby-tiny'>deby-tiny</option>
+		<option value='deby'>deby</option>
+</select></td>
+</tr>
+<tr>
+	<td><b>Built machine</b></td>
+	<td><select id="machine" name="machine">
+	</select></td>
+</tr>
 </table>
+<button onclick="reload()">Go</button>
 <br>
 <br><table class="main_table">
 <thead>
 <tr bgcolor="#bdc3c7">
 <th></th>
 <th>Package</th>
-<th>Version</th>
 <th>Build Status</th>
 <th>Ptest Status<br/>(PASS/SKIP/FAIL)</th>
 </tr></thead>
-<tr><td></td><td>acl</td><td>2.2.53</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/acl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>adduser</td><td>3.118</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/adduser.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>aide</td><td>0.16.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/aide.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>audit</td><td>2.8.4</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/audit.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>duplicity</td><td>0.7.18.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/duplicity.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>google-authenticator</td><td>NA</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/google-authenticator.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>iptables</td><td>1.8.2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/iptables.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>liblinux-usermod-perl</td><td>0.69</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/liblinux-usermod-perl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>libpam</td><td>NA</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libpam.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>libprelude</td><td>4.1.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libprelude.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>ntpsec</td><td>1.1.3</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/ntpsec.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>openssh</td><td>7.9p1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/openssh.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>openssl</td><td>1.1.1c</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/openssl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>pam-pkcs11</td><td>0.6.9</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/pam-pkcs11.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>pam-shield</td><td>0.9.6</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/pam-shield.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>prelude-manager</td><td>4.1.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/prelude-manager.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>rsyslog</td><td>8.1901.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/rsyslog.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>shadow</td><td>4.5</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/shadow.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>sudo</td><td>1.8.27</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/sudo.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>tpm2-abrmd</td><td>2.1.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-abrmd.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>tpm2-tools</td><td>3.1.3</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-tools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>tpm2-tss</td><td>2.1.0</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-tss.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
-<tr><td></td><td>util-linux</td><td>2.33.1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/util-linux.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>acl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/acl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>adduser</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/adduser.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>aide</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/aide.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>audit</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/audit.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>bjam-native</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/bjam-native.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>boost</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/boost.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>cracklib</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/cracklib.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>duplicity</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/duplicity.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>enum34</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/enum34.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gnupg</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/gnupg.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>gnutls</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/gnutls.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>google-authenticator</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/google-authenticator.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>icu</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/icu.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>iptables</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/iptables.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libassuan</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libassuan.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libcap-ng</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libcap-ng.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libgcrypt</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libgcrypt.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libgpg-error</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libgpg-error.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libidn2</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libidn2.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libidn</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libidn.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libksba</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libksba.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>liblinux-usermod-perl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/liblinux-usermod-perl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libpam</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libpam.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libprelude</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libprelude.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>libunistring</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/libunistring.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>logrotate</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/logrotate.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>lsb</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/lsb.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>mtools</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/mtools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>nettle</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/nettle.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>npth</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/npth.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>ntpsec</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/ntpsec.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>openssh</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/openssh.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>openssl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/openssl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pam-pkcs11</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/pam-pkcs11.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pam-shield</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/pam-shield.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>pinentry</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/pinentry.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>prelude-manager</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/prelude-manager.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-asn1crypto</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-asn1crypto.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-bcrypt</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-bcrypt.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-cffi</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-cffi.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-cryptography</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-cryptography.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-nacl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-nacl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-paramiko</td><td bgcolor="#e74c3c"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-paramiko.build.log>FAIL</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-ply</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-ply.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-pyasn1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-pyasn1.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python3-pycparser</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python3-pycparser.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-asn1crypto</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-asn1crypto.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-bcrypt</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-bcrypt.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-cffi</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-cffi.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-cryptography</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-cryptography.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-ipaddress</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-ipaddress.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-nacl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-nacl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-native</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-native.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-paramiko</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-paramiko.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-ply</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-ply.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-pyasn1</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-pyasn1.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-pycparser</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-pycparser.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>python-setuptools</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/python-setuptools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>rng-tools</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/rng-tools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>rsyslog</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/rsyslog.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>shadow</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/shadow.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>sudo</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/sudo.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>swig</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/swig.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>tcl</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tcl.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>tpm2-abrmd</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-abrmd.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>tpm2-tools</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-tools.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>tpm2-tss</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/tpm2-tss.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>util-linux</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/util-linux.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
+<tr><td></td><td>valgrind</td><td bgcolor="#2ecc71"><a href=https://raw.githubusercontent.com/tswcos/meta-debian-test-logs/master/deby/qemuarm64/valgrind.build.log>PASS</a></td><td bgcolor="#bdc3c7">NA</td></tr>
 </table></body></html>

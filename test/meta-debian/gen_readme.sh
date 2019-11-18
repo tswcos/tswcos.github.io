@@ -10,7 +10,7 @@ for distro in *; do
 		for i in $distro/*; do
 			if [ -d $i ]; then
 				machine=`basename $i`
-				echo "- [$machine](./$i)" >> README.md
+				echo "- [$machine](./$i/index.html)" >> README.md
 			fi
 		done
 		echo "" >> README.md

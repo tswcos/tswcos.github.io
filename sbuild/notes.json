@@ -14,6 +14,9 @@
   "agg": {
     "bugs": ["914740"]
   },
+  "alsa-lib": {
+    "bugs": ["942196"]
+  },
   "and": {
     "bugs": ["915441"]
   },
@@ -47,6 +50,9 @@
   "cpipe": {
     "bugs": ["931152"],
     "submitted": true
+  },
+  "cracklib2": {
+    "bugs": ["943500"]
   },
   "dclock": {
     "accepted": true,

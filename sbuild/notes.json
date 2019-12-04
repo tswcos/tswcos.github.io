@@ -143,6 +143,10 @@
     "submitted": true,
     "accepted": false
   },
+  "gnutls28": {
+    "bugs": ["943905"],
+    "remark": "Need to build with profile 'noguile'"
+  },
   "gtkpool": {
     "bugs": ["930831"],
     "submitted": true

@@ -1,6 +1,7 @@
 9menu
 aaphoto
 acedb
+acpica-unix
 agg
 and
 angband-audio

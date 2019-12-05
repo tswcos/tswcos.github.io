@@ -281,6 +281,9 @@
   "nasm": {
     "bugs": ["850933"]
   },
+  "nss": {
+    "remark": "need to disable parallel"
+  },
   "openssn": {
     "bugs": ["914724"]
   },

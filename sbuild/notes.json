@@ -301,6 +301,9 @@
     "bugs": ["930834"],
     "submitted": true
   },
+  "pps-tools": {
+    "bugs": ["929209"]
+  },
   "quadrapassel": {
     "bugs": ["930835"],
     "submitted": true,
@@ -338,6 +341,12 @@
     "submitted": true,
     "accepted": false
   },
+  "swig": {
+    "bugs": ["920734"]
+  },
+  "tcp-wrappers": {
+    "bugs": ["945483"]
+  },
   "tgif": {
     "bugs": ["930842"],
     "submitted": true
@@ -348,6 +357,9 @@
   },
   "unadf": {
     "bugs": ["915167"]
+  },
+  "unifdef": {
+    "bugs": ["753507"]
   },
   "usb-modeswitch": {
     "bugs": ["836018"]

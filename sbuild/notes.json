@@ -222,6 +222,9 @@
     "bugs": ["930988"],
     "submitted": true
   },
+  "libunistring": {
+    "remark": "Can pass dpkg-gensymbols by 'export DPKG_GENSYMBOLS_CHECK_LEVEL=0'"
+  },
   "libx11": {
     "remark": "Temporary defer cache variable patches"
   },
